@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Members - Scare Fright</title>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #121212, #1e1e1e);
+            color: #e0e0e0;
+            display: flex;
+            margin: 0;
+            transition: background-color 0.5s;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 150px;
+            height: 100%;
+            background-color: #00001c;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .sidebar h2 {
+            color: #8b0000;
+            font-family: 'Creepster', cursive;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin: 1.5rem 0;
+        }
+
+        .sidebar ul li a {
+            display: block;
+            color: #e0e0e0;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .sidebar ul li a:hover {
+            background-color: #8b0000;
+            color: #fff;
+        }
+
+        /* Main Content */
+        .content {
+            margin-left: 200px;
+            padding: 30px;
+            text-align: center;
+            width: calc(100% - 220px);
+        }
+
+        .header h1 {
+            font-family: 'Creepster', cursive;
+            font-size: 3rem;
+            color: #8b0000;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Member Cards Container */
+        .members-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .flip-card {
+            width: 250px;
+            height: 350px;
+            perspective: 1000px;
+            margin: 20px;
+        }
+
+        .flip-card-inner {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front,
+        .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .flip-card-front {
+            background-color: #fff;
+            border: 5px solid #fff;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-radius: 8px;
+            padding: 10px;
+        }
+
+        .flip-card-front img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .flip-card-back {
+            background-color: #1e1e1e;
+            color: #e0e0e0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            transform: rotateY(180deg);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .flip-card-back h3 {
+            font-size: 1.2rem;
+            color: #e63946;
+            margin-bottom: 10px;
+        }
+
+        .flip-card-back p {
+            font-size: 0.9rem;
+            color: #ccc;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #aaa;
+            text-align: center;
+        }
+    </style>
+    <head> 
+    <body style="background-image: url('https://static.vecteezy.com/system/resources/thumbnails/003/042/243/small/abstract-blue-grunge-texture-background-free-vector.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+      </body>
+    </head>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Scare Fright</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="members.html" class="active">Members</a></li>
+            <li><a href="tourdates.html">Tour Dates</a></li>
+            <li><a href="merch.html">Merch</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <div class="header">
+            <h1>Meet the Band</h1>
+        </div>
+
+        <!-- Members Cards -->
+        <div class="members-container">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="https://assets.onecompiler.app/432gabwda/432fvtmgb/Screenshot%202024-12-08%20181604.png	" alt="Spencer">
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Spencer</h3>
+                        <p>Bass Guitarist - Spencer is known for his deep, resonant bass lines that drive the band's sound forward. His rhythm is crucial to the band's heavy beats.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="https://assets.onecompiler.app/432gabwda/433cc4cqm/Screenshot%202024-12-18%20053910.png" alt="Conan">
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Conan</h3>
+                        <p>Drummer - Conan's powerful drumming provides the backbone for the band's energetic performances. His technique and stamina are unmatched.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="https://assets.onecompiler.app/432gabwda/432fvtmgb/Screenshot%202024-12-15%20135735.png" alt="Axel">
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Axel</h3>
+                        <p>Lead Guitarist - Axel's lightning-fast solos and melodic mastery set the tone for the band's high-energy performances. His guitar work is iconic.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="https://assets.onecompiler.app/432gabwda/433cc4cqm/Screenshot%202024-12-18%20054015.png" alt="Ryker">
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Ryker</h3>
+                        <p>Rhythm Guitarist - Ryker's solid rhythm guitar provides the foundation for the band's heavy sound. His style complements Axel's leads perfectly.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="https://assets.onecompiler.app/432gabwda/433cc4cqm/Screenshot%202024-12-18%20054116.png" alt="Ezra">
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Ezra</h3>
+                        <p>Keyboardist - Ezra adds depth and atmosphere to the band's music with his keyboard work. His ability to blend different sounds is a key element of their unique style.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "more info">
+         <h1>Five friends (Spencer, Conan, Axel, Ezra, and Ryker) started a band together to entertain young audiences in the form of rock music. They started playing a few gigs at local coffee shops and slowly built their fan base to large concerts and festivals. They are journeying to expand and grow their music platform performing in different cities and tours. Finding joy and excitement in creating their music, they hope to inspire individuals to follow their paths and dreams just like they did.
+         </h1>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            &copy; 2024 Scare Fright. All rights reserved.
+        </footer>
+    </div>
+
+    <!-- JavaScript for the flip card animation -->
+    <script>
+        // Function to flip card
+        document.querySelectorAll('.flip-card').forEach(card => {
+            card.addEventListener('mouseover', () => {
+                card.classList.add('flip');
+            });
+
+            card.addEventListener('mouseleave', () => {
+                card.classList.remove('flip');
+            });
+        });
+    </script>
+</body>
+</html>

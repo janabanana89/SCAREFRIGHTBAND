@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet"> <!-- Import Creepster font -->
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Set Creepster font for the body */
+        body {
+            font-family: 'Creepster', cursive; /* Use Creepster font for body */
+            display: flex;
+            background-color: #000; /* Black background */
+            color: #fff;
+        }
+
+        /* Sidebar Navigation */
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 150px;
+            height: 100%;
+            background-color: #00001c;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Set Arial font for sidebar page names */
+        .sidebar h2, .sidebar ul li a {
+            font-family: 'Arial', sans-serif;
+        }
+
+        .sidebar h2 {
+          font-family: 'Creepster', cursive;
+            color: #8b0000;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin: 1.5rem 0;
+        }
+
+        .sidebar ul li a {
+            display: block;
+            color: #e0e0e0;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .sidebar ul li a:hover {
+            background-color: #8b0000;
+            color: #fff;
+        }
+
+        /* Main Content */
+        main {
+            margin-left: 220px; /* Sidebar width */
+            padding: 20px;
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        p {
+            margin-bottom: 2rem;
+            color: #ccc;
+        }
+
+        /* Contact Form */
+        form {
+            width: 60%;
+            margin: 0 auto;
+            background-color: #222; /* Dark gray form background */
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        label {
+            display: block;
+            margin: 1rem 0 0.5rem;
+            text-align: left;
+            color: #fff;
+            font-size: 1rem;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            background-color: #333;
+            border: 1px solid #555;
+            color: #fff;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.6rem 1.5rem;
+            background-color: #8b0000;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            border: none;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body style="background-image: url('https://static.vecteezy.com/system/resources/thumbnails/003/042/243/small/abstract-blue-grunge-texture-background-free-vector.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+    <!-- Sidebar Navigation -->
+    <div class="sidebar">
+        <h2>Scare Fright</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="members.html">Members</a></li>
+            <li><a href="tourdates.html">Tour Dates</a></li>
+            <li><a href="merch.html">Merch</a></li>
+            <li><a href="contactus.html" class="active">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <h1>Contact Us</h1>
+        <p>Have any questions, inquiries, or feedback? Fill out the form below, and we'll get back to you as soon as possible! If that doesn't work contact us at scarefrightmanagement@gmail.com
+</p>
+        <form action="https://example.com/submit-form" method="post">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </main>
+</div>
+
+<footer>
+   &copy; 2024 Scare Fright. All rights reserved.
+</footer>
+</div>
+</body>
+</html>

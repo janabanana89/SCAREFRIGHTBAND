@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Dates</title>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    <style>
+        /* General Reset */
+        * {
+            font-family: 'Arial', Sans-Serif;
+        }
+
+        body {
+            display: flex;
+            background-color: #121212; /* Dark background */
+            color: #e0e0e0;
+            margin: 0;
+            transition: background-color 0.5s; /* Smooth transition for background color */
+        }
+
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 150px;
+            height: 100%;
+            background-color: #00001c;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .sidebar h2 {
+            color: #8b0000;
+            font-family: 'Creepster', cursive;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin: 1.5rem 0;
+        }
+
+        .sidebar ul li a {
+            display: block;
+            color: #e0e0e0;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .sidebar ul li a:hover {
+            background-color: #8b0000;
+            color: #fff;
+        }
+
+        /* Main Content */
+        main {
+            text-align: center;
+            margin-left: 220px;
+            padding: 20px;
+            width: calc(100% - 220px);
+        }
+
+        h1 {
+           font-family: 'Creepster', cursive;
+            margin-bottom: 1.5rem;
+            font-size: 2.5rem;
+            color: #8b0000; /* Dark red color */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Tour Dates Table */
+        table {
+           font-family: 'Creepster', cursive;
+            width: 70%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            background-color: #1e1e1e; /* Dark table background */
+            color: #e0e0e0;
+            font-size: 1rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Table shadow for depth effect */
+            transition: box-shadow 0.3s ease;
+            border-radius: 10px; /* Rounded corners for the table */
+        }
+
+        th, td {
+            border: 1px solid #333;
+            padding: 0.8rem;
+            text-align: center;
+        }
+
+        th {
+            background-color: #333;
+            color: #8b0000; /* Dark red color */
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #252525; /* Darker background for even rows */
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 0.5rem 1.2rem;
+            margin-top: 0.5rem;
+            background-color: #8b0000; /* Dark red color */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #e57373; /* Lighter shade of dark red on hover */
+        }
+
+        /* Smooth scroll to top button */
+        .scroll-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #8b0000; /* Dark red color */
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 50%;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            display: none; /* Initially hidden */
+        }
+
+        .scroll-top:hover {
+            background-color: #e57373; /* Lighter shade of dark red on hover */
+        }
+    </style>
+</head>
+<body style="background-image: url('https://static.vecteezy.com/system/resources/thumbnails/003/042/243/small/abstract-blue-grunge-texture-background-free-vector.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Scare Fright</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="members.html" class="active">Members</a></li>
+            <li><a href="tourdates.html">Tour Dates</a></li>
+            <li><a href="merch.html">Merch</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <h1>Upcoming Tour Dates</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Location</th>
+                    <th>Tickets</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>December 20, 2024 </td>
+                    <td>Philadelphia, PA</td>
+                    <td><a href="https://dasaishwarya2008.wixsite.com/scarefrightshop" class="btn">Buy Tickets</a></td>
+                </tr>
+                <tr>
+                    <td> December 25, 2024</td>
+                    <td>Chicago, IL</td>
+                    <td><a href="https://dasaishwarya2008.wixsite.com/scarefrightshop" class="btn">Buy Tickets</a></td>
+                </tr>
+                <tr>
+                    <td>March 18, 2025</td>
+                    <td>Mexico City, Mexico</td>
+                    <td><a href="https://dasaishwarya2008.wixsite.com/scarefrightshop" class="btn">Buy Tickets</a></td>
+                </tr>
+                <tr>
+                    <td>March 22, 2025</td>
+                    <td>Santiago, Chile</td>
+                    <td><a href="https://dasaishwarya2008.wixsite.com/scarefrightshop" class="btn">Buy Tickets</a></td>
+                </tr>
+                <tr>
+                    <td>March 29, 2025</td>
+                    <td>Sao Paulo, Brazil</td>
+                    <td><a href="https://dasaishwarya2008.wixsite.com/scarefrightshop" class="btn">Buy Tickets</a></td>
+                </tr>
+                <tr>
+                    <td>May 19, 2025</td>
+                    <td>Birmingham, United Kingdom</td>
+                    <td><a href="https://dasaishwarya2008.wixsite.com/scarefrightshop" class="btn">Buy Tickets</a></td>
+                </tr>
+                <tr>
+                    <td>May 31, 2025</td>
+                    <td>Copenghagen, Denmark</td>
+                    <td><a href="https://dasaishwarya2008.wixsite.com/scarefrightshop" class="btn">Buy Tickets</a></td>
+                </tr>
+                <tr>
+                    <td>August 8, 2025</td>
+                    <td>Vancouver, BC</td>
+                    <td><a href="https://dasaishwarya2008.wixsite.com/scarefrightshop" class="btn">Buy Tickets</a></td>
+                </tr>
+                <tr>
+                    <td>August 15, 2025</td>
+                    <td>Chicago, IL</td>
+                    <td><a href="https://dasaishwarya2008.wixsite.com/scarefrightshop" class="btn">Buy Tickets</a></td>
+                </tr>
+                <tr>
+                    <td>August 19, 2025</td>
+                    <td>Toronto, ON</td>
+                    <td><a href="https://dasaishwarya2008.wixsite.com/scarefrightshop" class="btn">Buy Tickets</a></td>
+                </tr>
+                <tr>
+                    <td>August 27, 2025</td>
+                    <td>Boston, MA</td>
+                    <td><a href="https://dasaishwarya2008.wixsite.com/scarefrightshop" class="btn">Buy Tickets</a></td>
+                </tr>
+                <tr>
+                    <td>September 14, 2025</td>
+                    <td>Orlando, FL</td>
+                    <td><a href="https://dasaishwarya2008.wixsite.com/scarefrightshop" class="btn">Buy Tickets</a></td>
+                </tr>
+                <tr>
+                    <td>September 18, 2025</td>
+                    <td>Dallas, TX</td>
+                    <td><a href="https://dasaishwarya2008.wixsite.com/scarefrightshop" class="btn">Buy Tickets</a></td>
+                </tr>
+                <tr>
+                    <td>September 24, 2025</td>
+                    <td>San Francisco, CA</td>
+                    <td><a href="https://dasaishwarya2008.wixsite.com/scarefrightshop" class="btn">Buy Tickets</a></td>
+                </tr>
+                <!-- Add additional rows as needed -->
+            </tbody>
+        </table>
+        <button class="scroll-top" onclick="scrollToTop()">↑</button>
+    </main>
+
+    <script>
+        // Show the scroll-to-top button when scrolling down
+        window.onscroll = function() {
+            const button = document.querySelector('.scroll-top');
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        };
+
+        // Scroll to top function
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+    </div>
+
+    <footer>
+       &copy; 2024 Scare Fright. All rights reserved.
+   </footer>
+</div>
+</body>
+</html>

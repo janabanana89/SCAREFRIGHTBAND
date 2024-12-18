@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scare Fright</title>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #fff;
+            font-size: 8px;
+        }
+
+        /* Sidebar */
+         .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 150px;
+            height: 100%;
+            background-color: #00001c;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .sidebar h2 {
+            color: #8b0000;
+            font-family: 'Creepster', cursive;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin: 1.5rem 0;
+        }
+
+        .sidebar ul li a {
+            display: block;
+            color: #e0e0e0;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .sidebar ul li a:hover {
+            background-color: #8b0000;
+            color: #fff;
+        }
+        /* Content */
+        .content {
+            margin-left: 200px;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .header h1 {
+            font-family: 'Creepster', cursive;
+            font-size: 3rem;
+            color: darkred;
+            margin-bottom: 40px;
+        }
+
+        /* Polaroid Style Center Image */
+        .polaroid {
+            background: #222;
+            display: inline-block;
+            padding: 10px;
+            border: 5px solid #111;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+            margin: 0 auto;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .polaroid img {
+            width: 250px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .caption {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        /* Vinyl Images on Sides */
+        .vinyl {
+            position: absolute;
+            top: 25%;
+            transform: translateY(-50%);
+            width: 150px;
+            height: auto;
+        }
+
+        .vinyl-left {
+            left: 10px;
+        }
+
+        .vinyl-right {
+            right: 10px;
+        }
+        
+        .vinyl {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            animation: spin 5s infinite linear;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        
+    </style>
+    <head> 
+    <body style="background-image: url('https://static.vecteezy.com/system/resources/thumbnails/003/042/243/small/abstract-blue-grunge-texture-background-free-vector.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+      </body>
+    </head>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Scare Fright</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="members.html" class="active">Members</a></li>
+            <li><a href="tourdates.html">Tour Dates</a></li>
+            <li><a href="merch.html">Merch</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </div>
+    <!-- Main Content -->
+    <div class="content">
+        <div class="header">
+            <h1>Scare Fright</h1>
+        </div>
+
+        <!-- Vinyl Images -->
+        <img src="https://assets.onecompiler.app/432gabwda/4337geh3u/Vinyl-Record-Transparent-Images.png" alt="Vinyl Record" class="vinyl vinyl-left">
+        <img src="https://assets.onecompiler.app/432gabwda/4337geh3u/Vinyl-Record-Transparent-Images.png" alt="Vinyl Record" class="vinyl vinyl-right">
+
+        <!-- Polaroid Image in Center -->
+        <div class="polaroid">
+            <img src="https://assets.onecompiler.app/432gabwda/4337geh3u/Screenshot%202024-12-17%20024532.png" alt="Polaroid Image">
+            <div class="caption">Beware of the scare..</div>
+        </div>
+        <audio autoplay loop hidden>
+    <source src="Scare Fright Song 1.m4a" type="audio/mpeg">
+    
+</audio>
+<div class = "something">
+  
+</div>
+
+         <footer>
+            &copy; 2024 Scare Fright. All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merch</title>
+    <!-- Import Creepster Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            background-color: #000; /* Black background */
+            color: #fff;
+            font-family: Arial, sans-serif; /* Default fallback font */
+        }
+
+        /* Sidebar Navigation */
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 150px;
+            height: 100%;
+            background-color: #00001c;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .sidebar h2 {
+            color: #8b0000;
+            font-family: 'Creepster', cursive;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin: 1.5rem 0;
+        }
+
+        .sidebar ul li a {
+            display: block;
+            color: #e0e0e0;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .sidebar ul li a:hover {
+            background-color: #8b0000;
+            color: #fff;
+        }
+
+        /* Main Content */
+        main {
+            margin-left: 220px; /* Sidebar width + spacing */
+            padding: 20px;
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        h1, h2 {
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+            font-family: 'Creepster', cursive;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        /* Merch Grid */
+        .merch-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 0 auto;
+            width: 80%;
+        }
+
+        .merch-item {
+            background-color: #222; /* Dark gray for cards */
+            padding: 1rem;
+            border: 1px solid #444;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .merch-item img {
+            max-width: 100%;
+            height: auto;
+            border-bottom: 1px solid #444;
+            margin-bottom: 1rem;
+        }
+
+        .merch-item h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            font-family: 'Creepster', cursive;
+            color: #fff;
+        }
+
+        .merch-item p {
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            color: #ccc;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.4rem 1rem;
+            background-color: #8b0000;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #333;
+        }
+    </style>
+    <head> 
+    <body style="background-image: url('https://static.vecteezy.com/system/resources/thumbnails/003/042/243/small/abstract-blue-grunge-texture-background-free-vector.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+      </body>
+    </head>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Scare Fright</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="members.html" class="active">Members</a></li>
+            <li><a href="tourdates.html">Tour Dates</a></li>
+            <li><a href="merch.html">Merch</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <h1>Our Merchandise</h1>
+        <h2>We have new merch coming! Stay Tuned! </h2>
+        <div class="merch-container">
+            <!-- Merch Item 1 -->
+            <div class="merch-item">
+                <img src="https://assets.onecompiler.app/432gabwda/433cc4cqm/Screenshot%202024-12-18%20052837.png" alt="Band T-Shirt">
+                <h3>Band Sweatshirt</h3>
+                <p>$30.00</p>
+                <a href="https://dasaishwarya2008.wixsite.com/scarefrightshop" class="btn">Buy Now</a>
+            </div>
+
+            <!-- Merch Item 2 -->
+            <div class="merch-item">
+                <img src="https://assets.onecompiler.app/432gabwda/433cc4cqm/Screenshot%202024-12-17%20183605.png" alt="Band Hat">
+                <h3>Band Hat</h3>
+                <p>$15.00</p>
+                <a href="https://dasaishwarya2008.wixsite.com/scarefrightshop" class="btn">Buy Now</a>
+            </div>
+
+            <!-- Merch Item 3 -->
+            <div class="merch-item">
+                <img src="https://assets.onecompiler.app/432gabwda/433cc4cqm/Screenshot%202024-12-18%20052703.png" alt="Sweatshirt">
+                <h3>Band Sweatshirt</h3>
+                <p>$35.00</p>
+                <a href="https://dasaishwarya2008.wixsite.com/scarefrightshop" class="btn">Buy Now</a>
+            </div>
+
+            <!-- Merch Item 4 -->
+            <div class="merch-item">
+                <img src="https://assets.onecompiler.app/432gabwda/433cc4cqm/Screenshot%202024-12-18%20052518.png" alt="Sweatshirt">
+                <h3>Band Sweatshirt</h3>
+                <p>$35.00</p>
+                <a href="https://dasaishwarya2008.wixsite.com/scarefrightshop" class="btn">Buy Now</a>
+            </div>
+        </div>
+    </main>
+</div>
+
+<footer>
+   &copy; 2024 Scare Fright. All rights reserved.
+</footer>
+</div>
+</body>
+</html>
